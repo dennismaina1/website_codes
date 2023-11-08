@@ -1,0 +1,132 @@
+@media (max-width: 768px) {
+  * {
+    font-size: 12px; /* Adjust the font size for smaller screens */
+  }
+}
+
+@media (max-width: 576px) {
+  * {
+    font-size: 10px; /* Further reduce font size for even smaller screens */
+  }
+}
+body{
+
+  font-family:'Times New Roman', Times, serif;
+  font-size: 16px;
+}
+
+  
+/* style the navigation bar */
+nav {
+  background-color: transparent;
+  overflow: hidden;
+  position:sticky;
+  
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  float: left;
+}
+
+nav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+nav li a:hover {
+  background-color: maroon;
+  color: white;
+  border-radius: 20%;
+  }
+
+
+.navbar .logo-icon a:hover{
+  border-radius: 50%; 
+}
+nav li.profile {
+  position: relative;
+}
+
+nav li.profile a {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  cursor: pointer;
+}
+
+.navbar .dropdown {
+    float: right;
+    margin-right: 0px;
+    overflow: hidden;
+    background-color: maroon;
+  }
+
+  .navbar .greeting {
+    color: white;
+    margin-top: 14px;
+    text-decoration:underline;
+    float: right;
+    display: block;
+    margin-right: 10px;
+    animation: zoomInOut 3s;
+  }
+  @media screen and (max-width: 768px) {
+    .navbar .greeting {
+        display: none; /* Hide the element for tablets and below */
+    }
+  }
+  
+  /* Dropdown button */
+  .dropdown .dropbtn {
+    
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: maroon;
+    font-family:'Poor Richard','Times New Roman', Times, serif; /* Important for vertical align on mobile phones */
+    margin: 0; /* Important for vertical align on mobile phones */
+  }
+  
+  /* Add a red background color to navbar links on hover */
+  .navbar a:hover, .navbar li.dropdown:hover .dropbtn {
+    background-color: red;
+  }
+  
+   
+  body.dark-mode .greeting {
+    color: white; /* Red color for dark mode */
+    animation: zoomInOut 3s; /* Add zoom in and out animation for dark mode */
+  }
+@keyframes zoomInOut {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1); /* Zoom in effect */
+    }
+}
+
+
+.toggle-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+}
+.navbar .dark .darkmode .centered-darkmode {
+  display: flex;
+  align-items: center;
+  margin-top: 14px;
+  padding-left: 100%;
+}

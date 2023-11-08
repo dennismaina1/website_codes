@@ -1,0 +1,387 @@
+/*styles.css */
+* {
+	box-sizing: border-box;
+	font-family: 'Times New Roman', Times, serif;
+	color: white;
+	
+}
+
+html,
+body,
+	.wrapper { 
+		height: 100%; }
+
+@keyframes rotate {
+	100% { background-position: 0% 50%;
+	}
+}
+
+body {
+	display: grid;
+	place-items: center;
+	margin: 0;
+	background-image: url("../images/background.jpg");
+	background-repeat: repeat-y;
+	background-size: cover;
+	animation: rotate 5s infinite alternate linear;
+	
+}
+
+
+
+input {
+	color-scheme: dark;
+  }
+
+button {
+	background: transparent;
+	border: 0;
+	cursor: pointer;
+}
+.reset-card #label1{
+
+  margin-top: 2%;
+}
+
+.control {
+	border: 1px dotted white;
+	border-radius: 8px;
+	outline: none;
+	width: 100%;
+	height:40px;
+	padding: 0 16px;
+	background: transparent;
+	font-family: inherit;
+	font-size: 16px;
+	transition: 0.4s;
+	color: white;
+}
+
+@media screen and (min-width: 1024px) {
+
+  * {
+    font-size: 14px; /* Adjust the font size for smaller screens */
+  
+  }
+  .response{
+    left:0; 
+    right:0;
+    margin:auto;
+    
+  }
+  .header{
+    margin-top: 4%;
+  }
+  .reset-card{
+    width: 60%;
+   
+  }
+  .errors{
+    left:0; 
+    right:0;
+    margin:auto;
+    
+  }
+  .text-container,.text-container2{
+    margin-bottom: 3%;
+  }
+  .goback{
+    padding-top: 10%;
+    left:0; 
+    right:0;
+    margin:auto;
+  }
+  .darkmode{
+
+    padding-top: 3%;
+  }
+  .darkmodes{
+
+    padding-top: 100px;
+  }
+  .errors{
+    left:0; 
+    right:0;
+    margin:auto;
+    
+  }
+}
+
+@media  screen and (min-width: 786px) and (max-width: 1024px) {
+  * {
+    font-size: 12px; /* Adjust the font size for smaller screens */
+  
+  }
+  .header{
+    margin-top: 3%;
+  }
+  .response{
+    left:0; 
+    right:0;
+    margin:auto;
+    
+  }
+  .reset-card{
+    width: 70%;
+   
+  }
+  .goback{
+    padding-top: 8%;
+    left:0; 
+    right:0;
+    margin:auto;
+  }
+  .darkmode{
+
+    padding-top: 3%;
+  }
+  .darkmodes{
+
+    padding-top: 95px;
+  }
+  .errors{
+    left:0; 
+    right:0;
+    margin:auto;
+    
+  }
+  .text-container,.text-container2{
+    margin-bottom: 3%;
+  }
+ 
+}
+
+
+@media screen and (min-width: 576px) and (max-width: 786px) {
+  * {
+    font-size: 12px; /* Adjust the font size for smaller screens */
+  
+  }
+  .header{
+    margin-top: 5%;
+  }
+  .response{
+    left:0; 
+    right:0;
+    margin:auto;
+  }
+  .reset-card{
+    width: 90%;
+   
+  }
+  .goback{
+    padding-top: 70px;
+    left:0; 
+    right:0;
+    margin:auto;
+  }
+  .darkmode{
+
+    padding-top: 5%;
+  }
+  .darkmodes{
+
+    padding-top: 95px;
+  }
+  .errors{
+    left:0; 
+    right:0;
+    margin:auto;
+  }
+  .text-container,.text-container2{
+    margin-bottom: 3%;
+  }
+ 
+}
+
+
+@media (max-width: 576px) {
+  * {
+    font-size: 10px; /* Further reduce font size for even smaller screens */
+  }
+  .header{
+    margin-top: 10%;
+  }
+  .response{
+    left:0; 
+    right:0;
+    margin:auto;
+    
+  }
+  .reset-card{
+    width: 90%;
+   
+  }
+  .goback{
+    margin-top: 20%;
+  }
+  .darkmode{
+
+    padding-top: 8%;
+  }
+  .darkmodes{
+
+    padding-top: 80px;
+  }
+  .errors{
+    left:0; 
+    right:0;
+    margin:auto;
+    
+  }
+  .text-container,.text-container2{
+    margin-bottom: 5%;
+  }
+  .reset-card .container{
+    margin-top: 30px;
+  }
+  .reset-card .header .logo{
+    margin-top: 10px;
+  }
+}
+
+.text-container input{
+  text-align: center;
+}
+
+.reset-card {
+	
+	height: 85%;
+	padding: 30px 30px 30px;
+	border-radius: 1.25rem;
+	background-color: rgba(0, 0, 0, .6);
+	text-align: center;
+}
+.reset-form {
+	width: 100;
+	max-height: fit-content;
+	margin: 0;
+	display: block;
+	
+	
+}
+
+.reset-form input.control::placeholder {
+	color: white;
+	
+}
+
+
+.switch {
+	
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 20px;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 18px;
+    width: 18px;
+    left: 4px;
+    bottom: 1px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+ /* Rounded sliders */
+ .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+  body.dark-mode {
+    background-image: url('../images/dark.jpeg'); /* Dark mode background image */
+}
+  
+
+.reset-card.dark-mode {
+    border: 2px dotted white;
+}
+
+.header .logo img{
+
+	height: 70px;
+	margin-bottom: 3%;
+}
+body.dark-mode {
+    background-image: url('../images/dark.jpeg'); /* Dark mode background image */
+}
+  
+
+.reset-card.dark-mode {
+    border: 2px dotted white;
+}
+
+#gtickcon, #gtickpas, #gtick1{
+	
+	position: absolute;
+	right: 10px;
+	top:30%;
+  
+  }
+  .text-container #toggle2, .text-container #toggle3{
+	color: white;
+	position: absolute;
+	right: 30px;
+	top:30%;
+  }
+
+.text-container {
+     display: inline-block;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    
+    }
+
+.text-container2 {
+     display: inline-block;
+     position: relative;
+     overflow: hidden;
+     
+     
+  }
+  .errors{
+    margin-top: -2px;
+  }

@@ -1,0 +1,269 @@
+/*styles.css */
+* {
+	box-sizing: border-box;
+	font-family: 'Times New Roman', Times, serif;
+	
+}
+
+html,
+body,
+	.wrapper { 
+		height: 100%; }
+
+@keyframes rotate {
+	100% { background-position: 0% 50%;
+	}
+}
+
+body {
+	display: grid;
+	place-items: center;
+	margin: 0;
+	background-image: url("../images/background.jpg");
+	background-repeat: repeat-y;
+	background-size: cover;
+	animation: rotate 5s infinite alternate linear;
+	
+}
+
+input {
+	color-scheme: dark;
+  }
+
+button {
+	background: transparent;
+	border: 0;
+	cursor: pointer;
+}
+
+.control {
+	border: 1px dotted white;
+	border-radius: 8px;
+	outline: none;
+	width: 100%;
+	height:56px;
+	padding: 0 16px;
+	background: transparent;
+	font-family: inherit;
+	font-size: 16px;
+	transition: 0.4s;
+	color: white;
+}
+.control2 {
+	border: 1px dotted white;
+	border-radius: 8px;
+	outline: none;
+	width: 100%;
+	height:56px;
+	padding: 0 16px;
+	background: transparent;
+	font-family: inherit;
+	font-size: 16px;
+	transition: 0.4s;
+	color: white;
+}
+
+.login-card {
+	width: 80%;
+	height: 95%;
+	padding: 30px 30px 30px;
+	border-radius: 1.25rem;
+	background-color: rgba(0, 0, 0, .6);
+	text-align: center;
+}
+
+
+
+.login-card> h2 {
+	font: 36px;
+	font-weight: 600;
+	margin: 0 0 6px;
+}
+.login-card > h3 {
+	color: white;
+	margin: 0 0 40px;
+	font-weight: 500;
+	font-size: 1rem;
+}
+.login-form {
+	width: 100;
+	max-height: fit-content;
+	margin: 0;
+	display: grid;
+	grid-template-columns: 1fr 1fr ;
+	gap: 16px;
+	
+}
+
+.login-form input.control::placeholder {
+	color: white;
+	
+}
+
+
+.login-form .submit{
+	margin-left:50%;
+	margin-right: -50%;
+}
+
+.login-form select.control{
+	background-color: transparent;
+
+}
+
+.header h1 ,h3{
+
+	color: white;
+	
+	
+}
+.header .logo:hover{
+
+	transform: scale(0.8, .8);
+}
+.signup{
+	margin-top: 2%;
+	
+}
+.signup a{
+	color: white;
+	
+}
+.response h4{
+
+	color: red;
+	animation: fadeinout 3s ease-in-out 1;
+}
+.success{
+
+	color: green;
+	animation: fadeinout 3s ease-in-out 1;
+
+}
+/* fade in out of error message in the response tag */
+@keyframes fadeinout {
+	/* 40% would be 3secs, 60% 4.5 secs */
+	40% {
+	   opacity: 1;
+	}
+ 
+	60% {
+	   opacity: 0;
+	}
+ }
+ /* error messages upon validation */
+ .submit .errors>ul>li{
+
+	display: hidden;
+	list-style: none;
+	
+ }
+ /* position green and red tick/cross inside textfields*/
+ #gtick1,#gtickp,#gtickid,#gtickcon,#gtickfname,#gticklname,#gtickpas{
+	
+	position: absolute;
+	right: 10px;
+	top:17px;
+  
+  }
+  #toggle2, #toggle3{
+	color: white;
+	position: absolute;
+	right: 30px;
+	top:17px;
+  }
+
+  .text-container {
+	display: inline-block;
+	position: relative;
+	overflow: hidden;
+  }
+/* hide spinners from input type numbe*/
+  input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button {
+  opacity: 0;
+}
+
+
+/* The switch - the box around the slider */
+.switch {
+	margin-bottom: 2%;
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 20px;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 18px;
+    width: 18px;
+    left: 4px;
+    bottom: 1px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+  body.dark-mode {
+    background-image: url('../images/dark.jpeg'); /* Dark mode background image */
+}
+  
+.darkmode{
+
+	margin-top: 2%;
+}
+.login-card.dark-mode {
+    border: 2px dotted white;
+}
+
+.header .logo img{
+
+	height: 70px;
+	margin-bottom: 2%;
+}
+

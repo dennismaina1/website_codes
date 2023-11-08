@@ -1,0 +1,241 @@
+
+
+
+ 
+  body {
+    background-image:url("../images/background.jpg"); /* replace with your own background image */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+  
+  /* center the content */
+  .container {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+  }
+  h1, p{
+    color: white;
+  }
+
+  /* style the slider */
+ .slider-wrapper {
+    width: 90%;
+    margin: 0 auto;
+    overflow: hidden;
+    margin-top: 20px;
+    position: relative; /* add position:relative to create a stacking context */
+  }
+  
+  .slider {
+    width: 500%;
+    animation: slide 5s ease ease-in-out;
+    position: relative; /* add position:relative to enable the use of position:absolute for slides */
+  }
+  
+  .slider img {
+    width: 10%;
+    float: left;
+  }
+  
+  .slider-button {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    z-index: 1; /* add a higher z-index than the slider to bring the button to the front */
+  }
+  
+  /* animate the slider */
+  @keyframes slide {
+    0% {
+      transform: translateX(0%);
+    }
+    20% {
+      transform: translateX(0%);
+    }
+    25% {
+      transform: translateX(-100%);
+    }
+    45% {
+      transform: translateX(-100%);
+    }
+    50% {
+      transform: translateX(-200%);
+    }
+    70% {
+      transform: translateX(-200%);
+    }
+    75% {
+      transform: translateX(-300%);
+    }
+    95% {
+      transform: translateX(-300%);
+    }
+    100% {
+      transform: translateX(-400%);
+    }
+  }
+
+  .slide-container{
+    max-width: 1120px;
+    width: 100%;
+    padding: 40px 0;
+  }
+  .slide-content{
+    margin: 0 40px;
+    overflow: hidden;
+    border-radius: 25px;
+  }
+  .card{
+    border-radius: 25px;
+    background-color: white;
+  }
+  .image-content,
+  .card-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 14px;
+  }
+ .image-content{
+    position: relative;
+    row-gap: 5px;
+    padding: 25px 0;
+  }
+  .container .overlay{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: grey;
+    border-radius: 25px 25px 0 25px;
+  }
+  .overlay::before,
+  .overlay::after{
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: -40px;
+    height: 40px;
+    width: 40px;
+    background-color: #4070F4;
+  }
+  .overlay::after{
+    border-radius: 0 25px 0 0;
+    background-color: #FFF;
+  }
+  .card-image{
+    position: relative;
+    height: 250px;
+    width: 150px;
+  
+    background: #FFF;
+    padding: 3px;
+  }
+  .card-image .card-img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+   
+    border: 1px solid #4070F4;
+  }
+  .name{
+    font-size: 18px;
+    font-weight: 500;
+    color: #333;
+  }
+  .description{
+    font-size: 14px;
+    color: #707070;
+    text-align: center;
+  }
+  .button{
+    border: none;
+    font-size: 16px;
+    color: #FFF;
+    padding: 8px 16px;
+    background-color: maroon;
+    border-radius: 6px;
+    margin: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  .button:hover{
+    background: #265DF2;
+  }
+  .swiper-navBtn{
+    color: #6E93f7;
+    transition: color 0.3s ease;
+  }
+  .swiper-navBtn:hover{
+    color: #4070F4;
+  }
+  .swiper-navBtn::before,
+  .swiper-navBtn::after{
+    font-size: 35px;
+  }
+  .swiper-button-next{
+    right: 0;
+  }
+  .swiper-button-prev{
+    left: 0;
+  }
+  .swiper-pagination-bullet{
+    background-color: #6E93f7;
+    opacity: 1;
+  }
+  .swiper-pagination-bullet-active{
+    background-color: #4070F4;
+  }
+  @media screen and (max-width: 768px) {
+    .slide-content{
+      margin: 0 10px;
+    }
+    .swiper-navBtn{
+      display: none;
+    }
+  } .shopping-cart {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9999;
+  }
+
+  .shopping-cart a {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-color: #f44336;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 50px;
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+
+  .shopping-cart a:hover {
+    background-color: #555;
+  }
+
+  .shopping-cart .badge {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    color: #f44336;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 50%;
+    line-height: 20px;
+    text-align: center;
+  }
+
+  

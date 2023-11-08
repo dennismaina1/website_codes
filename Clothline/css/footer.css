@@ -1,0 +1,70 @@
+/* Footer Container */
+.footer {
+    background-color:#04043f;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 5%;
+    border-radius: 10px;
+    width: 90%;
+}
+
+/* Footer Content */
+.footer-content {
+    display: flex;
+    align-items: center;
+    
+    padding-left: 5%;
+    
+}
+
+/* Social Media Icons */
+.footer-icons a {
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+    margin-right: 20px;
+}
+
+/* Copyright Statement */
+.footer-content p {
+    color: white;
+}
+
+.footer-nav{
+    padding-right: 5%;
+}
+/* Navigation Links */
+.footer-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.footer-nav a {
+    text-decoration: none;
+    color: white;
+}
+
+.footer p{
+    color: white;
+    text-align:center;
+    
+}
+
+.dark-mode .footer{
+    background-color: maroon;
+}
+/* Add dark mode styles for social media icons */
+.dark-mode .footer-icons a {
+    color: white;
+}
+
+/* Add dark mode styles for navigation links */
+.dark-mode .footer-nav li a {
+    color: white;
+}

@@ -1,0 +1,53 @@
+/* style the contact form */
+.form-wrapper {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    width: 100%;
+    margin-top: 1%;
+    text-align: left;
+    }
+  
+  .form-wrapper label {
+    display: block;
+    margin-top: 10px;
+    color: white;
+  }
+  
+  .form-wrapper input[type="text"],
+  .form-wrapper input[type="email"],
+  .form-wrapper textarea {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+  .form-wrapper input[type="submit"] {
+    background-color: #333;
+    color: white;
+    padding: 14px 20px;
+    margin-top: 10px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .form-wrapper input[type="submit"]:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  .control {
+    border: 1px dotted white;
+    border-radius: 8px;
+    outline: none;
+    width: 100%;
+    height:56px;
+    padding: 0 16px;
+    background: transparent;
+    font-family: inherit;
+    font-size: 16px;
+    transition: 0.4s;
+    color: white;
+  }
